@@ -59,7 +59,7 @@ class GameOfLifeController extends Controller {
                     'date_of_game' => new \DateTime(),
                     'state_of_game' => json_encode($newGen->getGameField())]
         );
-        return view('game', ['data' => $newGen->getGameField(), 'id' => $id + 1]);
+        return view('game', ['data' => $newGen->getGameField(), 'id' => $id, 'next'=>$id+1]);
     }
 
     /**
@@ -74,7 +74,7 @@ class GameOfLifeController extends Controller {
         if (!$prevGen) {
             return redirect('/');
         } else {
-            return view('game', ['data' => json_decode($prevGen->state_of_game, true), 'id' => $prevGen->id]);
+            return view('game', ['data' => json_decode($prevGen->state_of_game, true), 'id' => $prevGen->id, 'next'=>$id]);
         }
     }
 

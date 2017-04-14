@@ -19,7 +19,7 @@
                 <span class="text-center"><a href="{{url("/")}}"><button class="btn btn-danger">Restart</button></a></span>
             </div>
             <div class="col-md-2">
-                <form action="/next/{{ $id }}" method="POST" class="form-inline">
+                <form action="/next/{{ $next }}" method="POST" class="form-inline">
                     <input type="hidden" name="_method" value="POST">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <button class="btn btn-info" type="submit" >Next generation</button>

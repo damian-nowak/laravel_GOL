@@ -27,7 +27,7 @@
         <div class="col-md-4 text-center">
             <h2>Random...</h2>
             <p> <img src="{{asset("images/GoLRandom.jpg")}} "width="100px" height="100px"> </p>
-            <p><a class="btn btn-default" href="#" role="button">Start game &raquo;</a></p>
+            <p><a class="btn btn-default" href="{{url("start/Random")}}" role="button">Start game &raquo;</a></p>
         </div>
     </div>
 </div>

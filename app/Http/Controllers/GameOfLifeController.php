@@ -16,15 +16,28 @@ class GameOfLifeController extends Controller {
      * @return type
      */
     public function start($type) {
-        $seed = GolStarts::where('seed_name', $type)->first();
 
-        $startGen = new GoLGenerator(json_decode($seed->seed_data, true));
-        $inputIntoDB = GameOfLife::updateOrCreate(
-                        ['id' => 1], ['id' => 1,
-                    'date_of_game' => new \DateTime(),
-                    'state_of_game' => json_encode($startGen->getGameField())]
-        );
-        return view('game', ['data' => $startGen->getGameField(), 'id' => 1]);
+        if ($type == 'Random') {
+            $startGen = new GolGenerator();
+            $startGen->randomStart();
+            
+            $inputIntoDB = GameOfLife::updateOrCreate(
+                            ['id' => 1], ['id' => 1,
+                        'date_of_game' => new \DateTime(),
+                        'state_of_game' => json_encode($startGen->getPrevGameField())]
+            );
+            return view('seed', ['data' => $startGen->getPrevGameField(), 'id' => 1]);
+        } else {
+            $seed = GolStarts::where('seed_name', $type)->first();
+
+            $startGen = new GoLGenerator(json_decode($seed->seed_data, true));
+            $inputIntoDB = GameOfLife::updateOrCreate(
+                            ['id' => 1], ['id' => 1,
+                        'date_of_game' => new \DateTime(),
+                        'state_of_game' => json_encode($startGen->getGameField())]
+            );
+            return view('seed', ['data' => $startGen->getPrevGameField(), 'id' => 1]);
+        }
     }
 
     /**

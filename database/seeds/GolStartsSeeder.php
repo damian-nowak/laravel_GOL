@@ -43,33 +43,33 @@ class GolStartsSeeder extends Seeder
                 ['blue' => 0, 'green' => 1, 'status' => 'alive'],
                 ['blue' => 0, 'green' => 1, 'status' => 'alive'],
                 ['blue' => 0, 'green' => 1, 'status' => 'alive'],
-                ['blue' => 0, 'green' => 0, 'status' => 'new'],
-                ['blue' => 0, 'green' => 0, 'status' => 'new']
+                ['blue' => 0, 'green' => 0, 'status' => 'dead'],
+                ['blue' => 0, 'green' => 0, 'status' => 'dead']
             ],
             [
                 ['blue' => 0, 'green' => 1, 'status' => 'alive'],
-                ['blue' => 0, 'green' => 0, 'status' => 'new'],
-                ['blue' => 0, 'green' => 0, 'status' => 'new'],
-                ['blue' => 0, 'green' => 0, 'status' => 'new'],
-                ['blue' => 0, 'green' => 0, 'status' => 'new']
+                ['blue' => 0, 'green' => 0, 'status' => 'dead'],
+                ['blue' => 0, 'green' => 0, 'status' => 'dead'],
+                ['blue' => 0, 'green' => 0, 'status' => 'dead'],
+                ['blue' => 0, 'green' => 0, 'status' => 'dead']
             ],
             [
                 ['blue' => 0, 'green' => 1, 'status' => 'alive'],
-                ['blue' => 0, 'green' => 0, 'status' => 'new'],
-                ['blue' => 0, 'green' => 0, 'status' => 'new'],
-                ['blue' => 0, 'green' => 0, 'status' => 'new'],
+                ['blue' => 0, 'green' => 0, 'status' => 'dead'],
+                ['blue' => 0, 'green' => 0, 'status' => 'dead'],
+                ['blue' => 0, 'green' => 0, 'status' => 'dead'],
                 ['blue' => 1, 'green' => 0, 'status' => 'alive']
             ],
             [
-                ['blue' => 0, 'green' => 0, 'status' => 'new'],
-                ['blue' => 0, 'green' => 0, 'status' => 'new'],
-                ['blue' => 0, 'green' => 0, 'status' => 'new'],
-                ['blue' => 0, 'green' => 0, 'status' => 'new'],
+                ['blue' => 0, 'green' => 0, 'status' => 'dead'],
+                ['blue' => 0, 'green' => 0, 'status' => 'dead'],
+                ['blue' => 0, 'green' => 0, 'status' => 'dead'],
+                ['blue' => 0, 'green' => 0, 'status' => 'dead'],
                 ['blue' => 1, 'green' => 0, 'status' => 'alive']
             ],
             [
-                ['blue' => 0, 'green' => 0, 'status' => 'new'],
-                ['blue' => 0, 'green' => 0, 'status' => 'new'],
+                ['blue' => 0, 'green' => 0, 'status' => 'dead'],
+                ['blue' => 0, 'green' => 0, 'status' => 'dead'],
                 ['blue' => 1, 'green' => 0, 'status' => 'alive'],
                 ['blue' => 1, 'green' => 0, 'status' => 'alive'],
                 ['blue' => 1, 'green' => 0, 'status' => 'alive']
